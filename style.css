@@ -228,12 +228,13 @@ body {
           
 }
 
-.subtitle{
+.copies{
    font-family: 'Yanone Kaffeesatz', sans-serif;
-   font-size: 1rem;
+   font-size: 3rem;
+   color: #E2AC85;
+   justify-content: center;
+   text-align: center;
    margin: auto;
-   
- 
 }
 
 .herostick{
@@ -457,8 +458,8 @@ body {
      font-size:5rem;
    }
 
-   .subtitle{
-     font-size:1.25rem;
+   .copies{
+     font-size:4rem;
    }
 
    .sol1-1 {
@@ -501,8 +502,8 @@ body {
      font-size:7rem;
    }
 
-   .subtitle{
-     font-size:1.5rem;
+   .copies{
+     font-size:7rem;
    }
 
    .sol1-1 {
@@ -546,8 +547,8 @@ body {
      font-size:9rem;
    }
 
-   .subtitle{
-     font-size:1.75rem;
+   .copies{
+     font-size:9rem;
    }
 
    .sol1-1 {
