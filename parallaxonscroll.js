@@ -1,12 +1,12 @@
-$(document).on("scroll", function () {
+$(window).on("scroll", function () {
 
-    var pixels = $(document).scrollTop()
+    var pixels = $(window).scrollTop()
     
     
  
-    $(".bodymountain").css("top", pixels * -0.06)
+    
 
-    $(".solicon").css("top", pixels * 0.000000001)
+    
     
     
   

@@ -64,14 +64,14 @@ body {
 .img1{
     z-index:-1;
     top: 10%;
-    left: -5%;
+    left: -2%;
     animation: circle1 30s linear infinite;
  }
  
  .img2{
     z-index:3;
     top: 52%;
-    left: 10%;
+    left: 13%;
     animation: circle2 30s linear infinite;
  }
  
@@ -268,23 +268,34 @@ body {
 }
  
 .solicondiv {
-   z-index: 6;
-   height: 100%;
    position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   height: 100vh;
+   width: 100%;
+  
+   
+}
+
+#solicon {
+  
+   z-index: 6;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
  }
 
-.solicon {
-  
-  z-index: 6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  
+
+.solsetting {
+   position: sticky;
+   position: -webkit-sticky;
+   top: 0;
+   z-index: 6;
 }
+
+
 
 .sol1 {
    
@@ -335,8 +346,12 @@ body {
    width: 100%;
    height: 1000px;
    position: relative;
+   top: 0;
+   left: 0;
+   margin:0;
+   
    padding: 0;
-   z-index: 2;
+   z-index: 7;
    background-color: #000000;
 
 }
@@ -385,18 +400,23 @@ body {
    background-color: #D6BFDD!important;   
 }
 
-@media(max-width: 500px) {
+@media(min-width: 500px) {
   
    .title{
      font-size:5rem;
    }
 
-   .copies{
-     font-size: 5rem;
+
+
+   .txt-type {
+      font-size: 3.5rem;
+      padding: 0 1rem 0 1rem;
+      text-align: center;
    }
 
+ 
    .sol1-1 {
-      font-size:20rem;
+      font-size:15rem;
    }
 
  
@@ -413,18 +433,25 @@ body {
    .lunabtn {
       font-size: 1rem;
    }
+
+   #solicon {
+      height: 280px;
+      width: 281px;
+    }
    
  }
 
- @media(max-width: 800px) {
+ @media(min-width: 800px) {
   
    .title{
      font-size:7rem;
    }
 
-   .copies{
-     font: size 8rem;
-   }
+ 
+
+   .txt-type {
+      font: size 5.5rem;
+    }
 
    .sol1-1 {
       font-size: 22rem;
@@ -444,6 +471,11 @@ body {
    .lunabtn {
       font-size: 1.3rem;
    }
+
+   #solicon {
+      height: 450px;
+      width: 452px;
+    }
    
  }
 
@@ -454,9 +486,11 @@ body {
      font-size:9rem;
    }
 
-   .copies{
-     font-size:8.5rem;
-   }
+ 
+
+   .txt-type {
+      font-size: 7.5rem;
+    }
 
    .sol1-1 {
       font-size: 28rem;
@@ -478,6 +512,11 @@ body {
       font-size: 1.5rem;
    }
 
+   #solicon {
+      height: 543px;
+      width: 545px;
+    }
+
  
  }
 
@@ -488,8 +527,13 @@ body {
 
  .bodycontainer {
    position: relative;
-   height: 100vh;
+   height: 100%;
    width: 100%;
+   
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   
  }
 
  .bodymountain {      
@@ -498,14 +542,13 @@ body {
    z-index: 9;
 
    width: 100%;
+   height: 100%;
    
-   
-   position: absolute;
-   top: 0;
-   left: 0;
+   position: relative;
+
    margin:0;
-   
-   overflow-x: hidden;
+   padding: 0;
+   overflow: hidden;
    
 }
 
@@ -513,6 +556,7 @@ body {
     position: relative;
     background-color: white;
     z-index: -2;
+    
  }
 
  .fade {

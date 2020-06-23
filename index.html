@@ -78,7 +78,7 @@
              </video>       
         </div> 
     
-    <div class="daytonight">
+    <section class="daytonight">
     
         <div class="sol">
             <div class="sol1">
@@ -88,46 +88,60 @@
             
         </div>   
 
+        <section class="solsetting">
+            <div class="solicondiv">
+                 <img src="images/sol.png" id="solicon">      
+            </div> 
+        </section> 
 
-
-        </div> 
+               
         
-        <div class="solicondiv">
-            <img src="images/sol.png" class="solicon">
-         </div>
-
-        <div class="bodycontainer">
             
-            <img src="images/bodymountain.png" class="bodymountain">
         
-        </div>
 
-        <div class="luna">
-            <div class="luna1">
+           
+            
+                <img src="images/bodymountain.png" class="bodymountain">
+        
+        
+
+            <div class="luna">
+              <div class="luna1">
                 <p class="luna1-1">LUNA</p>
                 <a class="lunabtn" href="#">¿Qué tiene la Boutique de la Luna para mi?</a>
-            </div>
+              </div>
              
-        </div> 
+            </div> 
         
         
-        <div class="fade">
+            <div class="fade">
 
-        </div>
+            </div>
 
-
-    
-    </div>
 
     
-    
+        </section>
 
     
     
-<script src="main.js"></script>
+    <script type="text/javascript">
+        let solicon = document.getElementById("solicon");
+    
+      
+        window.addEventListener('scroll', function(){
+         var value = window.scrollY;
+         
+         solicon.style.bottom = value * -0.2 + 'px';
+           
+      })
+    
+    </script>
+    
+    
+
 <script src="typing.js"></script>
 <script src="jquery-3.5.1.min.js"></script>    
-<script src="parallaxonscroll.js"></script>
+
 <script src="fade.js"></script>
  
     
