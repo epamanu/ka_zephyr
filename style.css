@@ -217,6 +217,7 @@ body {
    height: 100%;
    display: grid;
    place-items: center;
+   padding: 0 1rem;
   }
 
 
@@ -297,16 +298,6 @@ body {
   z-index: 7;
 }
 
-.sol2 {
-
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   text-align: center;
-   z-index: 7;
-}
-
 .sol1-1 {
    font-family: 'Cormorant Garamond', serif;
    font-size: 15rem;
@@ -318,25 +309,7 @@ body {
    z-index: 7;
 }
 
-.sol2-1 {
-   font-family: 'Cormorant Garamond', serif;
-   font-size: 1.5rem;
-   color: #8f8f8f;
-   justify-content: center;
-   text-align: center;
-   margin: auto;
-   z-index: 7;
-}
 
-.sol2-2 {
-   font-family: 'Yanone Kaffeesatz', sans-serif;
-   font-size: 1rem;
-   color: #000000;
-   justify-content: center;
-   text-align: center;
-   z-index: 7;
-   
-}
 
 .solbtn {
    font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -380,15 +353,6 @@ body {
   z-index: 7;
 }
 
-.luna2 {
-
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   text-align: center;
-   z-index: 7;
-}
 
 .luna1-1 {
    font-family: 'Cormorant Garamond', serif;
@@ -401,30 +365,7 @@ body {
    z-index: 7;
 }
 
-.luna2-1 {
-   font-family: 'Cormorant Garamond', serif;
-   font-size: 1.5rem;
-   
-   color: #D6BFDD;
-   justify-content: center;
-   text-align: center;
-   margin: auto;
 
-   padding: 0rem 0rem 3rem 0rem;
-   z-index: 7;
-}
-
-.luna2-2 {
-   font-family: 'Yanone Kaffeesatz', sans-serif;
-   font-size: 1rem;
-   
-   color: #D6BFDD;
-   justify-content: center;
-   text-align: center;
-   padding: 3rem 0rem 0rem 0rem;
-   z-index: 7;
-   
-}
 
 .lunabtn {
    font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -444,8 +385,7 @@ body {
    background-color: #D6BFDD!important;   
 }
 
-@media screen and (min-width:768px)  
- {
+@media(max-width: 500px) {
   
    .title{
      font-size:5rem;
@@ -459,37 +399,24 @@ body {
       font-size:20rem;
    }
 
-   .sol2-1 {
-      font-size: 2rem;
-      
-   }  
+ 
    .solbtn {
       font-size: 1rem;
    }
-   .sol2-2 {
-      font-size: 1rem;
-      
-   }
+
 
    .luna1-1 {
       font-size:10rem;
    }
 
-   .luna2-1 {
-      font-size: 2rem;
-      padding: 0rem 0rem 3rem 0rem;
-   }  
+   
    .lunabtn {
       font-size: 1rem;
    }
-   .luna2-2 {
-      font-size: 1rem;
-      padding: 3rem 0rem 0rem 0rem;
-   }
+   
  }
 
-@media screen and (min-width:992px)   
- {
+ @media(max-width: 800px) {
   
    .title{
      font-size:7rem;
@@ -503,38 +430,25 @@ body {
       font-size: 22rem;
    }
 
-   .sol2-1 {
-      font-size: 2.5rem;
-      
-   }  
+   
    .solbtn {
       font-size: 1.3rem;
    }
-   .sol2-2 {
-      font-size: 1.3rem;
-      
-   }
+   
 
    .luna1-1 {
       font-size: 15rem;
    }
 
-   .luna2-1 {
-      font-size: 2.5rem;
-      padding: 0rem 0rem 5rem 0rem;
-   }  
+   
    .lunabtn {
       font-size: 1.3rem;
    }
-   .luna2-2 {
-      font-size: 1.3rem;
-      padding: 4.5rem 0rem 0rem 0rem;
-   }
+   
  }
 
 
-@media screen and (min-width:1200px)   
- {
+ @media(min-width: 1200px) {
   
    .title{
      font-size:9rem;
@@ -548,35 +462,28 @@ body {
       font-size: 28rem;
    }
    
-   .sol2-1 {
-      font-size: 3rem;
-      
-   }  
+   
    .solbtn {
       font-size: 1.5rem;
    }
 
-   .sol2-2 {
-      font-size: 1.5rem;
-      
-   }
+ 
 
    .luna1-1 {
       font-size: 20rem;
    }
    
-   .luna2-1 {
-      font-size: 3rem;
-      padding: 0rem 0rem 7rem 0rem;
-   }  
+  
    .lunabtn {
       font-size: 1.5rem;
    }
 
-   .luna2-2 {
-      font-size: 1.5rem;
-      padding: 6rem 0rem 0rem 0rem;
-   }
+ 
+ }
+
+ /* cursor */
+.txt-type > .txt {
+   border-right: 0.2rem solid #000;
  }
 
  .bodycontainer {
