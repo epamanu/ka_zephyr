@@ -1,3 +1,5 @@
+/// <reference path="typings/globals/jquery/index.d.ts" />
+
 let imgArr = document.querySelectorAll(".img");
 let prevX = 0;
 let prevY = 0;
