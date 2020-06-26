@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA ZEPHYR Planets System</title>
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="script/animaonscroll.js"></script> 
+     
+    <script type="text/javascript" src="script/scroll-out.js"></script> 
     <script src="script/jquery-3.5.1.min.js"></script>  
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oranienbaum&family=Playfair+Display&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
@@ -270,7 +271,7 @@
       
       <div id="layer">
               <div class="text">
-                  <p class="copies"><span class="txt-type" data-wait="3000" data-words='["Ecologic Friendly Fashion", "Lifestyle Essentials", "Holistic & Metaphysical"]'></span></p>
+                  <p class="copies"><span class="txt-type" data-wait="2500" data-words='["Ecological Friendly Fashion", "Lifestyle Essentials", "Holistic & Metaphysical"]'></span></p>
               </div> 
       </div>
  
@@ -293,11 +294,11 @@
     
     <section class="daytonight">
     
-        <div id="sol">
+        <div class="sol">
            <div class="solbox">
             <div class="sol1">
-                <p class="sol1-1">SOL</p>
-                <a class="solbtn" href="#">What does the Sol Boutique have for me?</a>
+                <p id="sol11">SOL</p>
+                <a id="solbutton" class="solbtn" href="#">What does the Sol Boutique have for me?</a>
             </div>
             <div class="solcopy">
                  <p class="solcopy1">"Make your wardrobe come alive with garments and accesories that align with the cosmos and let the forces of the mystical flow through your style in harmony with your divine power...</p>
@@ -323,11 +324,11 @@
             <div class="luna">
 
               <div class="lunasky">
-                <div class="lunaicon">
-                  <img src="images/luna.svg"> 
+                <div>
+                  <img src="images/luna.svg" class="lunaicon"> 
                 </div>
-                <div class="lunastars">
-                  <img src="images/luna_stars.svg"> 
+                <div>
+                  <img src="images/luna_stars.svg" class="lunastars"> 
                 </div>
               </div>
 
@@ -467,9 +468,19 @@
 
 
 
- 
+<script type="text/javascript" src="script/scroll-out.js"></script> 
 
-    
+<script type="text/javascript">
+  ScrollOut({
+        viewportY: 1,
+        targets: '#sol11,#solbutton,.solcopy1,.solcopy2,.solicondiv,#solicon',
+        
+
+  })
+
+
+</script>
+
 </body>
 
 

@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oranienbaum&family=Playfair+Display&family=Yanone+Kaffeesatz:wght@200&display=swap');
 
+html {
+   overflow-x: hidden;
+}
+
+
 body {
     margin: 0px;
     padding: 0px;
- 
+    
+    
  
     
 }
@@ -31,14 +37,7 @@ body {
    z-index: 10;
 }
 
-.logo {
-   mix-blend-mode: difference;
-}
 
-
-.menu {
-   fill: black;
-}
 
 
 
@@ -269,8 +268,11 @@ body {
    left: 0;
    width: 100%;
    height: 100vh;
+   overflow: hidden;
 
+   
 
+   
 }
 
  .text{
@@ -281,7 +283,7 @@ body {
    place-items: center;
 
    justify-content: center;
-   padding: 2rem 1rem 0 1rem;
+   padding: 2rem 0.5rem 0 0.5rem;
   }
 
 
@@ -292,6 +294,10 @@ body {
    font-size: 3rem;
    color: #E2AC85;
    display: grid;
+   text-align: center;
+   place-items: center;
+
+   justify-content: center;
    margin: auto;
 }
 
@@ -321,7 +327,7 @@ body {
   object-fit: cover;
 }
 
-#sol {
+.sol {
   
    width: 100%;
    height: 1300px;
@@ -351,12 +357,13 @@ body {
 .sol1 {
   position: relative;
   margin-bottom: 10px;
-  padding: 3rem;
+  padding: 3rem 0rem;
   text-align: center;
   z-index: 7;
 }
 
-.sol1-1 {
+#sol11 
+{
    position: relative;
    font-family: 'Cormorant Garamond', serif;
    font-size: 15rem;
@@ -366,11 +373,21 @@ body {
    padding: 2px 2px;
    margin: auto;
    z-index: 7;
+   transition: 1s;
+   transform: translateY(70px);
+   opacity: 0;
 }
 
+#sol11[data-scroll="in"]
+{
+  transform: translateY(0);
+  transition-delay: 1s;
+  opacity: 1;
+  z-index: 7;
+  
+}
 
-
-.solbtn {
+#solbutton {
    font-family: 'Yanone Kaffeesatz', sans-serif;
    font-size: 1rem;
    color: #000000;
@@ -382,6 +399,20 @@ body {
    padding: 10px 24px;
    border-radius: 8px;
    z-index: 20;
+   transform: translateY(-10px);
+   transition: 0.2s;
+   opacity: 0;
+   background-color: #E2AC85;
+}
+
+#solbutton[data-scroll="in"]
+{
+  transform: translateY(0px);
+  
+  opacity: 1;
+  z-index: 20;
+  background-color: #fff
+  
 }
 
 .solbtn:hover {
@@ -407,14 +438,37 @@ body {
    font-size: 1.2rem;
    padding: 2rem 4rem;
    z-index: 7;
+   transform: translateX(-60px);
+   transition: 1s;
+   opacity: 0;
 }
+
+.solcopy1[data-scroll="in"] {
+   
+   transform: translateX(0px);
+   transition-delay: 1s;
+   opacity: 1;
+   z-index: 7;
+}
+
 
 .solcopy2 {
    
    font-size: 1.2rem;
    padding: 2rem 4rem;
    z-index: 7;
+   transform: translateX(60px);
+   transition: 1s;
+   opacity: 0;
 
+}
+
+.solcopy2[data-scroll="in"] {
+   
+   transform: translateX(0px);
+   transition-delay: 1s;
+   opacity: 1;
+   z-index: 7;
 }
 
 .solicondiv {
@@ -423,8 +477,16 @@ body {
    width: 100%;
    margin: 0;
    padding: 0;
-  
-   
+   transform: translateY(100px);
+   transition: 3s;
+   opacity: 0;   
+}
+
+.solicondiv[data-scroll="in"] {
+
+   transform: translateY(0px);
+   transition-delay: 3s;
+   opacity: 1;  
 }
 
 #solicon {
@@ -474,11 +536,12 @@ body {
    margin: 0;
    padding: 0;
    z-index: 6;
+   overflow: hidden;
   
    
 }
 .lunaicon {
-   z-index: 6;
+   
    position: absolute;
    top: 50%;
    left: 50%;
@@ -490,7 +553,7 @@ body {
 }
 
 .lunastars {
-   z-index: 6;
+   
    position: absolute;
    top: 50%;
    left: 50%;
@@ -605,7 +668,7 @@ body {
    }
 
  
-   .sol1-1 {
+   #sol11 {
       font-size:15rem;
    }
 
@@ -627,7 +690,16 @@ body {
    #solicon {
       height: 280px;
       width: 281px;
-    }
+   }
+
+   .lunaicon {
+      height: 170.814px;
+      width: 170.814px;
+   }
+   .lunastars {
+      height: 250.33px;
+      width: 250.33px;    
+   }
    
  }
 
@@ -643,7 +715,7 @@ body {
       font-size: 5.5rem;
     }
 
-   .sol1-1 {
+   #sol11 {
       font-size: 22rem;
    }
 
@@ -666,6 +738,15 @@ body {
       height: 450px;
       width: 452px;
     }
+
+    .lunaicon {
+      height: 180.814px;
+      width: 180.814px;
+   }
+   .lunastars {
+      height: 290.33px;
+      width: 290.33px;    
+   }
    
  }
 
@@ -682,7 +763,7 @@ body {
       font-size: 7.5rem;
     }
 
-   .sol1-1 {
+   #sol11 {
       font-size: 28rem;
    }
    
@@ -707,12 +788,21 @@ body {
       width: 545px;
     }
 
+   .lunaicon {
+      height: 242.814px;
+      width: 242.814px;
+   }
+   .lunastars {
+      height: 373.33px;
+      width: 373.33px;    
+   }
+
  
  }
 
  /* cursor */
 .txt-type > .txt {
-   border-right: 0.2rem solid #000;
+   border-right: 0.1rem solid #000;
  }
 
 
@@ -751,4 +841,5 @@ body {
    background-color: #000000;
    z-index: -1;
    opacity: 0;
+   overflow: hidden;
  }
