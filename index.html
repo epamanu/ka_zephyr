@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA ZEPHYR Planets System</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/main.css">
      
     <script type="text/javascript" src="script/scroll-out.js"></script> 
     <script src="script/jquery-3.5.1.min.js"></script>  
@@ -297,19 +297,19 @@
         <div class="sol">
            <div class="solbox">
             <div class="sol1">
-                <p id="sol11">SOL</p>
-                <a id="solbutton" class="solbtn" href="#">What does the Sol Boutique have for me?</a>
+                <p id="sol11" data-scroll>SOL</p>
+                <a class="solbtn" href="#" data-scroll>What does the Sol Boutique have for me?</a>
             </div>
             <div class="solcopy">
-                 <p class="solcopy1">"Make your wardrobe come alive with garments and accesories that align with the cosmos and let the forces of the mystical flow through your style in harmony with your divine power...</p>
-                 <p class="solcopy2">...Spread your light and vibrations wearing our organic exclusive collections designed with awareness in the spiritual and metaphysical world transforming your feelings and emotions into creative expression Finding balance in the whole."</p>
+                 <p class="solcopy1" data-scroll>"Make your wardrobe come alive with garments and accesories that align with the cosmos and let the forces of the mystical flow through your style in harmony with your divine power...</p>
+                 <p class="solcopy2" data-scroll>...Spread your light and vibrations wearing our organic exclusive collections designed with awareness in the spiritual and metaphysical world transforming your feelings and emotions into creative expression Finding balance in the whole."</p>
             </div>
           </div>
             
         </div>   
 
         <section class="solsetting">
-          <div class="solicondiv">
+          <div class="solicondiv" data-scroll>
                <img src="images/sol.svg" id="solicon">      
           </div> 
       </section>        
@@ -325,24 +325,27 @@
 
               <div class="lunasky">
                 <div>
-                  <img src="images/luna.svg" class="lunaicon"> 
+                  <img src="images/luna.svg" class="lunaicon" data-scroll> 
                 </div>
+              
+
+              
                 <div>
-                  <img src="images/luna_stars.svg" class="lunastars"> 
+                  <img src="images/luna_stars.svg" class="lunastars" data-scroll> 
                 </div>
               </div>
-
+            
 
             <div class="lunabox">
               <div class="luna1">
-                <p class="luna1-1">LUNA</p>
-                <a class="lunabtn" href="#">What does the Luna Boutique have for me?</a>
+                <p class="luna1-1" data-scroll>LUNA</p>
+                <a class="lunabtn" href="#" data-scroll>What does the Luna Boutique have for me?</a>
               </div>
              
       
               <div class="lunacopy">
-                <p class="lunacopy1">"Elevate yourself discovering our Exclusive lifestyle essentials, magic gifts intentionally put together as a seed for you to be able to see the world with more clarity & transparency....</p>
-                <p class="lunacopy2">...Uplift your spirit thru the fulfillment of your soul, leaving preconceived opinions & labels following your own path to thrive & grow, guided by our Essentials Kits created from the heart and only with pure intentions."</p>
+                <p class="lunacopy1" data-scroll>"Elevate yourself discovering our Exclusive lifestyle essentials, magic gifts intentionally put together as a seed for you to be able to see the world with more clarity & transparency....</p>
+                <p class="lunacopy2" data-scroll>...Uplift your spirit thru the fulfillment of your soul, leaving preconceived opinions & labels following your own path to thrive & grow, guided by our Essentials Kits created from the heart and only with pure intentions."</p>
               </div>
             </div>  
            </div> 
@@ -438,26 +441,11 @@
        
               });
            });
-      
-      
-      </script>
-    
-    <script type="text/javascript">
-        let solicon = document.getElementById("solicon");
-     
-      
-        window.addEventListener('scroll', function(){
-         var value = window.scrollY;
          
-         solicon.style.bottom = value * -0.2 + 'px';
-           
-      })
-    
-    </script>
-    
+          </script>
     
 
-<script src="script/typing.js"></script>
+<script src="script/typing.js"> </script>
  
 
 
@@ -471,12 +459,7 @@
 <script type="text/javascript" src="script/scroll-out.js"></script> 
 
 <script type="text/javascript">
-  ScrollOut({
-        viewportY: 1,
-        targets: '#sol11,#solbutton,.solcopy1,.solcopy2,.solicondiv,#solicon',
-        
-
-  })
+  ScrollOut();
 
 
 </script>

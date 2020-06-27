@@ -63,7 +63,7 @@ body {
    height: 800px;
    width: 100%;
    position: relative;
-   overflow: hidden;  
+   
    background-color: #ffffff; 
 
     
@@ -268,7 +268,7 @@ body {
    left: 0;
    width: 100%;
    height: 100vh;
-   overflow: hidden;
+   
 
    
 
@@ -378,16 +378,17 @@ body {
    opacity: 0;
 }
 
+
+
 #sol11[data-scroll="in"]
 {
   transform: translateY(0);
-  transition-delay: 1s;
-  opacity: 1;
-  z-index: 7;
   
+  opacity: 1;
+   
 }
 
-#solbutton {
+.solbtn {
    font-family: 'Yanone Kaffeesatz', sans-serif;
    font-size: 1rem;
    color: #000000;
@@ -400,25 +401,25 @@ body {
    border-radius: 8px;
    z-index: 20;
    transform: translateY(-10px);
-   transition: 0.2s;
+   transition: 1s;
    opacity: 0;
    background-color: #E2AC85;
-}
-
-#solbutton[data-scroll="in"]
-{
-  transform: translateY(0px);
-  
-  opacity: 1;
-  z-index: 20;
-  background-color: #fff
-  
 }
 
 .solbtn:hover {
    background-color: #E2AC85!important;
    
 }
+
+.solbtn[data-scroll="in"]
+{
+  transform: translateY(0px);  
+  opacity: 1;
+  background-color: #fff
+  
+}
+
+
 
 .solcopy {
    position: relative;
@@ -435,7 +436,7 @@ body {
 
 .solcopy1 {
    
-   font-size: 1.2rem;
+   font-size: 1rem;
    padding: 2rem 4rem;
    z-index: 7;
    transform: translateX(-60px);
@@ -446,15 +447,14 @@ body {
 .solcopy1[data-scroll="in"] {
    
    transform: translateX(0px);
-   transition-delay: 1s;
    opacity: 1;
-   z-index: 7;
+   
 }
 
 
 .solcopy2 {
    
-   font-size: 1.2rem;
+   font-size: 1rem;
    padding: 2rem 4rem;
    z-index: 7;
    transform: translateX(60px);
@@ -466,9 +466,9 @@ body {
 .solcopy2[data-scroll="in"] {
    
    transform: translateX(0px);
-   transition-delay: 1s;
+   
    opacity: 1;
-   z-index: 7;
+   
 }
 
 .solicondiv {
@@ -485,7 +485,7 @@ body {
 .solicondiv[data-scroll="in"] {
 
    transform: translateY(0px);
-   transition-delay: 3s;
+   
    opacity: 1;  
 }
 
@@ -493,12 +493,12 @@ body {
   
    z-index: 6;
    position: absolute;
-   top: 50%;
+   top: 35%;
    left: 50%;
    transform: translate(-50%,-50%);
    padding: 0;
    margin: 0;
-   overflow: hidden;
+   
  }
 
 
@@ -511,12 +511,14 @@ body {
    padding: 0;
 }
 
-
+.moonlanding {
+   font-size: 0;
+}
 
 .luna {
   
    width: 100%;
-   height: 1300px;
+   height: 1600px;
    position: relative;
    top: 0;
    left: 0;
@@ -536,33 +538,64 @@ body {
    margin: 0;
    padding: 0;
    z-index: 6;
-   overflow: hidden;
+   
   
    
 }
+
+
+
 .lunaicon {
    
    position: absolute;
-   top: 50%;
+   top: 100%;
    left: 50%;
    transform: translate(-50%,-50%);
    padding: 0;
    margin: 0;
-   overflow: hidden;
    z-index: 6;
+   transition: 3s;
+   opacity: 0;
+   overflow: hidden;
+}
+
+
+.lunaicon[data-scroll="in"] {
+   
+   top: 50%;
+ 
+ 
+   opacity: 1; 
+   overflow: hidden; 
 }
 
 .lunastars {
    
    position: absolute;
-   top: 50%;
+   top: 100%;
    left: 50%;
    transform: translate(-50%,-50%);
    padding: 0;
    margin: 0;
    z-index: 6;
+   
+   transition: 3s;
+   opacity: 0;
    overflow: hidden;
 }
+
+.lunastars[data-scroll="in"] {
+   
+   top: 50%;
+   transition-delay: 1s;
+ 
+ 
+   opacity: 1; 
+   overflow: hidden; 
+}
+
+
+
 
 
 .lunabox {
@@ -597,10 +630,20 @@ body {
    padding: 2px 2px;
    margin: auto;
    z-index: 7;
-
+   transition: 1s;
+   transform: translateY(70px);
+   opacity: 0;
 }
 
 
+
+.luna1-1[data-scroll="in"]
+{
+  transform: translateY(0);
+  
+  opacity: 1;
+   
+}
 
 .lunabtn {
    font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -614,7 +657,20 @@ body {
    padding: 10px 24px;
    border-radius: 8px;
    z-index: 20;
+   transform: translateY(-10px);
+   transition: 1s;
+   opacity: 0;
+   background-color: #D6BFDD;
 }
+
+.lunabtn[data-scroll="in"]
+{
+  transform: translateY(0px);  
+  opacity: 1;
+  background-color: #000
+  
+}
+
 
 .lunabtn:hover {
    background-color: #D6BFDD!important;   
@@ -637,19 +693,40 @@ body {
 
 .lunacopy1 {
    
-   font-size: 1.2rem;
+   font-size: 1rem;
    padding: 2rem 4rem;
    z-index: 7;
    color: #ffffff;
+   transform: translateX(-60px);
+   transition: 1s;
+   opacity: 0;
 }
+
+.lunacopy1[data-scroll="in"] {
+   
+   transform: translateX(0px);
+   opacity: 1;
+   
+}
+
 
 .lunacopy2 {
    
-   font-size: 1.2rem;
+   font-size: 1rem;
    padding: 2rem 4rem;
    z-index: 7;
    color: #ffffff;
 
+   transform: translateX(60px);
+   transition: 1s;
+   opacity: 0;
+}
+
+.lunacopy2[data-scroll="in"] {
+   
+   transform: translateX(0px);
+   opacity: 1;
+   
 }
 
 
@@ -698,7 +775,34 @@ body {
    }
    .lunastars {
       height: 250.33px;
-      width: 250.33px;    
+      width: 250.33px;   
+   
+   }
+
+   .solcopy1 {
+   
+      font-size: 1rem;
+
+   }
+
+   .solcopy2 {
+   
+      font-size: 1rem;
+
+   }
+
+   .lunacopy1 {
+   
+      font-size: 1rem;
+      
+
+   }
+
+   .lunacopy2 {
+   
+      font-size: 1rem;
+      
+
    }
    
  }
@@ -746,6 +850,30 @@ body {
    .lunastars {
       height: 290.33px;
       width: 290.33px;    
+   }
+
+   .solcopy1 {
+   
+      font-size: 1.2rem;
+
+   }
+
+   .solcopy2 {
+   
+      font-size: 1.2rem;
+
+   }
+
+   .lunacopy1 {
+   
+      font-size: 1.2rem;
+
+   }
+
+   .lunacopy2 {
+   
+      font-size: 1.2rem;
+
    }
    
  }
@@ -797,6 +925,30 @@ body {
       width: 373.33px;    
    }
 
+
+   .solcopy1 {
+   
+      font-size: 1.3rem;
+
+   }
+
+   .solcopy2 {
+   
+      font-size: 1.3rem;
+
+   }
+
+   .lunacopy1 {
+   
+      font-size: 1.3rem;
+
+   }
+
+   .lunacopy2 {
+   
+      font-size: 1.3rem;
+
+   }
  
  }
 
@@ -814,7 +966,7 @@ body {
    position: relative;
    margin:0;
    padding: 0;
-   overflow: hidden; 
+
    
    
     
@@ -842,4 +994,5 @@ body {
    z-index: -1;
    opacity: 0;
    overflow: hidden;
+   
  }
