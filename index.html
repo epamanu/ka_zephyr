@@ -216,7 +216,7 @@
 
            <div class="navmenu">
                <a href="#" class="btn-menu" id="btn-menu">
-                <i id="menu-icon" class="ka-open_menu"></i>
+                <i id="menuicon" class="ka-open_menu"></i>
                </a>
            </div>
         </div>
@@ -245,18 +245,18 @@
           </div>
         
           <div class="container">
-            <label for="uname"><b>Anonymous Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            
+            <input type="text" placeholder="Enter Anonymous Username" name="uname" required>
         
-            <label for="psw"><b>Password</b></label>
+            
             <input type="password" placeholder="Enter Password" name="psw" required>
         
             <button type="submit" class="buttonsignin">Sign In</button>
-            <button type="register" class="buttonsignup">Sign Up</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
+            <div class="signinextras">
+           
             <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+            <button type="register" class="buttonsignup">Became a new star here</button>
   
 
           </div>
@@ -279,6 +279,7 @@
 						<a href="#" class="fa fa-facebook"></a>
 						<a href="#" class="fa fa-twitter"></a>
           </div>
+          <p class="foot">Ka Zephyr © 2020 all rights reserved</p>
                    
         </nav>
         
@@ -507,6 +508,16 @@
 <script type="text/javascript">
   ScrollOut();
 
+
+</script>
+
+<script src="script/background-check.min.js"></script>
+
+<script type="text/javascript">
+  BackgroundCheck.init({
+  targets: '.ka-open_menu',
+  images: '.planets,.daytonight,.moonlanding,.bodymountain',
+});
 
 </script>
 

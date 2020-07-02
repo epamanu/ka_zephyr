@@ -113,11 +113,17 @@ form {
           flex-grow: 1;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   width: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -125,6 +131,9 @@ input[type=text], input[type=password] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Set a style for all buttons */
@@ -135,8 +144,10 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 .buttonsignup {
@@ -146,13 +157,21 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 60%;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* Add a hover effect for buttons */
-button:hover {
-  opacity: 0.8;
+.buttonsignin:hover {
+  background-color: #D6BFDD;
+}
+
+.buttonsignup:hover {
+  background-color: #E2AC85;
 }
 
 /* Center the avatar image inside this container */
@@ -173,7 +192,7 @@ img.avatar {
 
 /* The "Forgot password" text */
 span.psw {
-  float: right;
+  float: center;
   padding-top: 16px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -212,7 +231,7 @@ span.psw {
 .full-menu .navegacion ul li a {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 3.5rem;
   color: #000;
   -webkit-transition: 3s;
   transition: 3s;
@@ -241,10 +260,35 @@ span.psw {
   text-align: right;
 }
 
-#menu-icon {
+.foot {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  bottom: 0;
+}
+
+.btn-menu {
+  text-decoration: none;
+}
+
+#menuicon {
   font-size: 100px;
   text-decoration: none;
-  mix-blend-mode: exclusion;
+}
+
+.ka-open_menu {
+  color: white;
+}
+
+.ka-open_menu.background--light {
+  color: black;
+}
+
+.ka-open_menu.background--dark {
+  color: white;
+}
+
+.ka-close_menu {
   color: black;
 }
 
@@ -276,7 +320,7 @@ span.psw {
   height: 800px;
   width: 100%;
   position: relative;
-  background-color: #ffffff;
+  background-image: url(../images/bgwhite.png);
 }
 
 #main {
@@ -781,7 +825,8 @@ span.psw {
   margin: 0;
   padding: 0;
   z-index: 5;
-  background-color: #000000;
+  background-image: url(images/bgblack.png);
+  background-size: cover;
 }
 
 .lunasky {
@@ -1134,13 +1179,15 @@ span.psw {
 
 .daytonight {
   position: relative;
-  background-color: white;
+  background-image: url(../images/bgwhite.png);
+  background-size: cover;
   z-index: -2;
   font-size: 0;
 }
 
 .moonlanding {
   font-size: 0;
+  background-image: url(../images/bgblack.png);
 }
 
 .fade {
@@ -1150,6 +1197,7 @@ span.psw {
   width: 100%;
   height: 100%;
   background-color: #000000;
+  background-size: cover;
   z-index: -1;
   opacity: 0;
   overflow: hidden;
