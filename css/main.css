@@ -292,6 +292,23 @@ span.psw {
   color: black;
 }
 
+#menulogo {
+  font-size: 120px;
+  text-decoration: none;
+}
+
+.ka-isotipo_ka_zephyr {
+  color: white;
+}
+
+.ka-isotipo_ka_zephyr.background--light {
+  color: black;
+}
+
+.ka-isotipo_ka_zephyr.background--dark {
+  color: white;
+}
+
 /* RESPONSIVE*/
 @media screen and (max-width: 750px) {
   /*Full menu*/
