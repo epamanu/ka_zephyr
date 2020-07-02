@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oranienbaum&family=Playfair+Display&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@font-face {
+  font-family: 'ka-zephyr';
+  src: url("fonts/ka-zephyr.eot?pfpyi1");
+  src: url("fonts/ka-zephyr.eot?pfpyi1#iefix") format("embedded-opentype"), url("fonts/ka-zephyr.ttf?pfpyi1") format("truetype"), url("fonts/ka-zephyr.woff?pfpyi1") format("woff"), url("fonts/ka-zephyr.svg?pfpyi1#ka-zephyr") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ka-"], [class*=" ka-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ka-zephyr' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ka-close_menu:before {
+  content: "\e901";
+}
+
+.ka-isotipo_ka_zephyr:before {
+  content: "\e902";
+}
+
+.ka-open_menu:before {
+  content: "\e903";
+}
+
 html {
   overflow-x: hidden;
 }
@@ -10,7 +45,6 @@ body {
 
 .navbar {
   position: absolute;
-  z-index: 10;
 }
 
 .navlogo {
@@ -25,7 +59,7 @@ body {
   margin-top: 1%;
   margin-right: 1%;
   right: 0;
-  z-index: 10;
+  z-index: 25;
 }
 
 .hero {
@@ -43,6 +77,199 @@ body {
   z-index: -20;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.full-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  -webkit-transition: 2s;
+  transition: 2s;
+  z-index: 20;
+}
+
+.full-menu .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Bordered form */
+form {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  width: 30%;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Set a style for all buttons */
+.buttonsignin {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.buttonsignup {
+  background-color: #ffffff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+
+.full-menu .wrap .navegacion {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.full-menu .navegacion ul {
+  list-style: none;
+}
+
+.full-menu .navegacion ul li {
+  margin: 20px 0px;
+}
+
+.full-menu .navegacion ul li a {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+  color: #000;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.full-menu .navegacion .social-items a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  margin: 50px 20px 0px 0px;
+}
+
+.full-menu .navegacion ul li a:hover,
+.full-menu .navegacion .social-items a:hover {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.full-menu .wrap .menu-text {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+#menu-icon {
+  font-size: 100px;
+  text-decoration: none;
+  mix-blend-mode: exclusion;
+  color: black;
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 750px) {
+  /*Full menu*/
+  .full-menu .navegacion ul li a {
+    font-size: 30px;
+  }
+  .full-menu .menu-text p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .full-menu .menu-text {
+    display: none;
+  }
+  .full-menu .navegacion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 
 .planets {

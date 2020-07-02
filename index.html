@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>KA ZEPHYR Planets System</title>
     <link rel="stylesheet" href="css/main.css">
      
@@ -215,17 +215,8 @@
             </div>
 
            <div class="navmenu">
-               <a href="#" class="menu">
-                <svg version="1.1" id="menusvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="83.075px" height="82.869px" viewBox="0 0 83.075 82.869" enable-background="new 0 0 83.075 82.869" xml:space="preserve">
-             <g>
-               <path  class="menu" fill="#FFFFFF" d="M41.696,81.442c-21.918,0-39.75-17.832-39.75-39.75s17.832-39.75,39.75-39.75s39.75,17.832,39.75,39.75
-                 S63.614,81.442,41.696,81.442z M41.696,2.942c-21.367,0-38.75,17.383-38.75,38.75s17.383,38.75,38.75,38.75
-                 s38.75-17.383,38.75-38.75S63.063,2.942,41.696,2.942z"/>
-             </g>
-             <polygon class="menu" fill="#FFFFFF" points="62.784,41.192 42.196,41.192 42.196,20.604 41.196,20.604 41.196,41.192 20.606,41.192 
-               20.606,42.192 41.196,42.192 41.196,62.781 42.196,62.781 42.196,42.192 62.784,42.192 "/>
-             </svg>
+               <a href="#" class="btn-menu" id="btn-menu">
+                <i id="menu-icon" class="ka-open_menu"></i>
                </a>
            </div>
         </div>
@@ -243,7 +234,60 @@
              </video>       
         </div> 
     </section>  
-      
+    
+    
+    <div class="full-menu">
+			<div class="wrap">
+				
+        <form action="action_page.php" method="post">
+          <div class="imgcontainer">
+            <img src="images/Logo_ka-zephyr_full_linear.png" alt="Avatar" class="avatar">
+          </div>
+        
+          <div class="container">
+            <label for="uname"><b>Anonymous Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="buttonsignin">Sign In</button>
+            <button type="register" class="buttonsignup">Sign Up</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+  
+
+          </div>
+        </form>
+        
+        
+        
+        <nav class="navegacion">
+					<ul class="menu-principal">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">SOL Boutique</a></li>
+            <li><a href="#">LUNA Boutique</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Legal Information</a></li>
+            
+					</ul>
+					<div class="social-items">
+						<a href="#" class="fa fa-youtube-play"></a>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+          </div>
+                   
+        </nav>
+        
+       
+       
+			</div>
+		</div>
+
+    
     <div class="planets">
     <div id="main">
       <div id="object1">
@@ -450,6 +494,8 @@
 
 
 <script src="script/fade.js"></script>
+
+<script src="script/fullmenu.js"></script>
 
 
 
