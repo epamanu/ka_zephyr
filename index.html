@@ -101,25 +101,25 @@
     <div class="planets">
     <div id="main">
       <div id="object1">
-        <img src="images/planet.png" class="img img1" width="350px" height="350px";/>
+        <img src="images/planet.png" class="img img1"/>
       </div>
       <div id="object2">
-        <img src="images/planet.png" class="img img2" style="width:180px;height:180px;"/>
+        <img src="images/planet.png" class="img img2"/>
       </div>
       <div id="object3">
-        <img src="images/planet.png" class="img img3" style="width:210px;height:210px;"/>
+        <img src="images/planet.png" class="img img3"/>
       </div>
       <div id="object4">
-        <img src="images/planet.png" class="img img4" style="width:270px;height:270px;"/>
+        <img src="images/planet.png" class="img img4"/>
       </div>
       <div id="object5">
-        <img src="images/planet.png" class="img img5" style="width:100px;height:100px;"/>
+        <img src="images/planet.png" class="img img5"/>
       </div>
       <div id="object6">
-        <img src="images/planet.png" class="img img6" style="width:240px;height:240px;"/>
+        <img src="images/planet.png" class="img img6"/>
       </div>
       <div id="object7">
-        <img src="images/planet.png" class="img img7" style="width:300px;height:300px;"/>
+        <img src="images/planet.png" class="img img7"/>
       </div>
     </div>
       
@@ -185,7 +185,7 @@
 
               
                 <div>
-                  <img src="images/luna_stars.svg" class="lunastars" data-scroll> 
+                  <img src="images/constelacion01.svg" class="lunastars" data-scroll> 
                 </div>
               </div>
             
@@ -203,8 +203,9 @@
               </div>
             </div>  
            </div> 
-                        
-        
+           <div class="lunacalltoaction">
+           <a class="lunacall" href="#">Became a Star in our Galaxy</a>        
+          </div>
             <div class="fade">
 
             </div>
@@ -327,6 +328,23 @@
   targets: '.ka-open_menu,.ka-isotipo_ka_zephyr',
   images: '.planets,.daytonight,.moonlanding,.bodymountain',
 });
+
+</script>
+
+<script type="text/javascript">
+   var count = 0
+   var images = ["images/constelacion01.svg", "images/constelacion02.svg", "images/constelacion03.svg", "images/constelacion04.svg", "images/constelacion05.svg", "images/constelacion06.svg", "images/constelacion07.svg", "images/constelacion08.svg", "images/constelacion09.svg", "images/constelacion10.svg", "images/constelacion11.svg", "images/constelacion12.svg"]
+
+  setInterval(function () {
+
+    count = count + 1
+    count = count % images.length
+
+    var image = images[count]
+
+    $(".lunastars").attr("src", image)
+
+  }, 2000)
 
 </script>
 

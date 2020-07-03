@@ -379,10 +379,16 @@ body {
 
 
 
+
+
+
+
+
 #object1 {
    position: absolute;
    top: 10%;
    left: -2%;
+
    
 }
 
@@ -391,6 +397,7 @@ body {
    top: 40%;
    left: 13%;
    z-index: 2;
+
    
 }
 
@@ -398,6 +405,7 @@ body {
    position: absolute;
    top: -5%;
    left: 30%;
+
    
 }
 
@@ -405,6 +413,7 @@ body {
    position: absolute;
    left: 72%;
    top: -15%;
+
    
 }
 
@@ -413,6 +422,7 @@ body {
    left: 15%;
    top: 70%;
    z-index: 2;
+
    
 }
 
@@ -421,6 +431,7 @@ body {
    left: 90%;
    top: 40%;
    z-index: 2;
+
    
 }
 
@@ -428,34 +439,49 @@ body {
    position: absolute;
    top: 70%;
    left: 55%;
+   
  
 }
 
 .img1{
+   height: 350px;
+   width: 350px;
    animation: circle1 30s linear infinite;
 }
 
 .img2{
+   height: 180px;
+   width: 180px;
    animation: circle2 30s linear infinite;
 }
 
 .img3{
+   height: 210px;
+   width: 210px;
    animation: circle3 40s linear infinite;
 }
 
 .img4{
+   height: 270px;
+   width: 270px;
    animation: circle4 50s linear infinite;
 }
 
 .img5{
+   height: 100px;
+   width: 100px;
    animation: circle5 70s linear infinite;
 }
 
 .img6{
+    height: 240px;
+    width: 240px;
     animation: circle6 30s linear infinite;
 }
 
 .img7{
+   height: 300px;
+   width: 300px;
    animation: circle7 50s linear infinite;
 }
 
@@ -1029,6 +1055,35 @@ body {
    
 }
 
+.lunacalltoaction{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 0 0 100px;
+}
+
+.lunacall{
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size: 2rem;
+   color: #ffffff;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   border: 1px solid #ffffff;
+   text-decoration: none;
+   padding: 10px 24px;
+   border-radius: 8px;
+   z-index: 20;
+   background-color: #000;
+}
+
+.lunacall:hover {
+   background-color: #D6BFDD;  
+   color: #000; 
+}
 
 @media(min-width: 500px) {
   
@@ -1104,7 +1159,51 @@ body {
       
 
    }
+
+   #object5 {
+      
+      left: 20%;
+      top: 60%;
+      
    
+      
+   }
+   
+   .img1{
+      height: 300px;
+      width: 300px;
+   }
+   
+   .img2{
+      height: 150px;
+      width: 150px;
+   }
+   
+   .img3{
+      height: 180px;
+      width: 180px;
+   }
+   
+   .img4{
+      height: 240px;
+      width: 240px;
+   }
+   
+   .img5{
+      height: 70px;
+      width: 70px;
+   }
+   
+   .img6{
+      height: 190px;
+      width: 190px;
+   }
+   
+   .img7{
+      height: 270px;
+      width: 270px;
+   }
+
  }
 
  @media(min-width: 800px) {
@@ -1175,7 +1274,50 @@ body {
       font-size: 1.2rem;
 
    }
+
+   #object5 {
+      
+      left: 15%;
+      top: 70%;
+    
+   }
+
+
+   .img1{
+      height: 350px;
+      width: 350px;
+   }
    
+   .img2{
+      height: 180px;
+      width: 180px;
+   }
+   
+   .img3{
+      height: 210px;
+      width: 210px;
+   }
+   
+   .img4{
+      height: 270px;
+      width: 270px;
+   }
+   
+   .img5{
+      height: 100px;
+      width: 100px;
+   }
+   
+   .img6{
+      height: 240px;
+      width: 240px;
+   }
+   
+   .img7{
+      height: 300px;
+      width: 300px;
+   }
+
  }
 
 
@@ -1249,6 +1391,50 @@ body {
       font-size: 1.3rem;
 
    }
+
+   
+   #object5 {
+      
+      left: 15%;
+      top: 70%;
+    
+   }
+   
+   .img1{
+      height: 350px;
+      width: 350px;
+   }
+   
+   .img2{
+      height: 180px;
+      width: 180px;
+   }
+   
+   .img3{
+      height: 210px;
+      width: 210px;
+   }
+   
+   .img4{
+      height: 270px;
+      width: 270px;
+   }
+   
+   .img5{
+      height: 100px;
+      width: 100px;
+   }
+   
+   .img6{
+      height: 240px;
+      width: 240px;
+   }
+   
+   .img7{
+      height: 300px;
+      width: 300px;
+   }
+
  
  }
 
