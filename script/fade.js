@@ -7,7 +7,7 @@ $(document).on("scroll", function () {
   
     var diff = pageBottom - scrollBottom
   
-    var opacity = 1 - diff / 1850
+    var opacity = 1 - diff / 2000
   
     $(".fade").css("opacity", opacity)
   

@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oranienbaum&family=Playfair+Display&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@font-face {
+  font-family: 'ka-zephyr';
+  src: url("fonts/ka-zephyr.eot?pfpyi1");
+  src: url("fonts/ka-zephyr.eot?pfpyi1#iefix") format("embedded-opentype"), url("fonts/ka-zephyr.ttf?pfpyi1") format("truetype"), url("fonts/ka-zephyr.woff?pfpyi1") format("woff"), url("fonts/ka-zephyr.svg?pfpyi1#ka-zephyr") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ka-"], [class*=" ka-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ka-zephyr' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ka-close_menu:before {
+  content: "\e901";
+}
+
+.ka-isotipo_ka_zephyr:before {
+  content: "\e902";
+}
+
+.ka-open_menu:before {
+  content: "\e903";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+}
+
+.navbar .navlogo {
+  position: fixed;
+  margin: 8px 0 0 8px;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.navbar .navlogo #menulogo {
+  font-size: 120px;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.navbar .navlogo .ka-isotipo_ka_zephyr {
+  color: black;
+}
+
+.navbar .navmenu {
+  position: fixed;
+  margin: 8px 8px 0 0;
+  right: 0;
+  z-index: 25;
+  text-decoration: none;
+}
+
+.navbar .navmenu .btn-menu {
+  text-decoration: none;
+}
+
+.navbar .navmenu .btn-menu #menuicon {
+  font-size: 100px;
+  text-decoration: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.navbar .navmenu .btn-menu .ka-open_menu {
+  color: black;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+header #sol {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 100px 0 0 0;
+  font-size: 300px;
+  padding: 0;
+  color: black;
+  text-align: center;
+  width: 100%;
+  /* Full width */
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+header .boutique {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.stickybox {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+}
+
+.stickybox .banners {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 50px;
+  background-color: #faeae1;
+  min-height: 100vh;
+  z-index: 10;
+}
+
+.stickybox .banners .heroshots {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stickybox .banners .heroshots .heroone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stickybox .banners .heroshots .heroone .stimula {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  font-size: 300px;
+}
+
+.stickybox section {
+  border-top: 0.5px solid black;
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.stickybox .glider-next {
+  position: absolute;
+  right: 10px;
+  padding: 0 20px 0 0;
+  z-index: 500;
+}
+
+.stickybox .glider-prev {
+  position: absolute;
+  left: 10px;
+  padding: 0 0 0 20px;
+  z-index: 500;
+  width: 34px;
+}
+
+.stickybox #dots {
+  position: absolute;
+  top: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 100;
+}
+
+.stickybox .categoriesvideo {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 50px;
+  background-color: #faeae1;
+  z-index: 20;
+  min-height: 100vh;
+}
+
+.stickybox .categoriesvideo .categoryroom {
+  position: relative;
+}
+
+.stickybox .category {
+  padding: 0;
+}
+
+.stickybox .categoriesmenu {
+  position: fixed;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  top: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 10000000;
+}
+
+.stickybox .categoriesmenu li {
+  z-index: 10000000;
+  text-decoration: none;
+}
+
+.stickybox .glider-contain {
+  width: 100%;
+  height: 800px;
+}
+
+.stickybox .bodysuits {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 50px;
+  background-color: #faeae1;
+  z-index: 30;
+  min-height: 100vh;
+}
+
+.stickybox .bodysuits .glider {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 .centered {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 .centered .productA01 {
+  top: 50%;
+  position: absolute;
+  z-index: 100;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 .centered .productA01 .bodysuit_A01 {
+  height: 100px;
+  width: 100px;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 .centered #circle {
+  position: absolute;
+  top: 50%;
+  background: black;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  z-index: 80;
+}
+
+.stickybox .bodysuits .glider .bodysuit01 .price {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 50px;
+}
+
+.stickybox .fullbody {
+  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 70px;
+  background-color: #f1d8ca;
+  z-index: 40;
+  min-height: 100vh;
+}
+
+.stickybox .fullbody .fullbodyroom {
+  position: relative;
+}
+
+.stickybox .upperbody {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 90px;
+  background-color: #ebc1aa;
+  z-index: 50;
+  min-height: 100vh;
+}
+
+.stickybox .upperbody .upperbodyroom {
+  position: relative;
+}
+
+.stickybox .bottoms {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 110px;
+  background-color: #db9772;
+  z-index: 60;
+  min-height: 100vh;
+}
+
+.stickybox .bottoms .bottomroom {
+  position: relative;
+}
+
+.stickybox .accesories {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 130px;
+  background-color: #b88061;
+  z-index: 70;
+  min-height: 100vh;
+}
+
+.stickybox .accesories .accesoriesroom {
+  position: relative;
+}
+
+.stickybox .goluna {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+  background-color: #000;
+  z-index: 80;
+  min-height: 100vh;
+}
+
+.stickybox .goluna .lunacalltoaction {
+  position: relative;
+  color: #fff;
+}
+
+.stickybox .goluna .lunacalltoaction .lunabox {
+  position: absolute;
+}
+/*# sourceMappingURL=sol.css.map */

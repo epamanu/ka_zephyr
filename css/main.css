@@ -338,6 +338,7 @@ span.psw {
   width: 100%;
   position: relative;
   background-image: url(../images/bgwhite.png);
+  background-size: cover;
 }
 
 #main {
@@ -1146,6 +1147,10 @@ span.psw {
     left: 20%;
     top: 60%;
   }
+  #object6 {
+    left: 95%;
+    top: 45%;
+  }
   .img1 {
     height: 300px;
     width: 300px;
@@ -1173,6 +1178,38 @@ span.psw {
   .img7 {
     height: 270px;
     width: 270px;
+  }
+  .btn-menu {
+    text-decoration: none;
+  }
+  #menuicon {
+    font-size: 100px;
+    text-decoration: none;
+  }
+  .ka-open_menu {
+    color: white;
+  }
+  .ka-open_menu.background--light {
+    color: black;
+  }
+  .ka-open_menu.background--dark {
+    color: white;
+  }
+  .ka-close_menu {
+    color: black;
+  }
+  #menulogo {
+    font-size: 120px;
+    text-decoration: none;
+  }
+  .ka-isotipo_ka_zephyr {
+    color: white;
+  }
+  .ka-isotipo_ka_zephyr.background--light {
+    color: black;
+  }
+  .ka-isotipo_ka_zephyr.background--dark {
+    color: white;
   }
 }
 
@@ -1223,6 +1260,10 @@ span.psw {
     left: 15%;
     top: 70%;
   }
+  #object6 {
+    left: 90%;
+    top: 40%;
+  }
   .img1 {
     height: 350px;
     width: 350px;
@@ -1250,6 +1291,38 @@ span.psw {
   .img7 {
     height: 300px;
     width: 300px;
+  }
+  .btn-menu {
+    text-decoration: none;
+  }
+  #menuicon {
+    font-size: 100px;
+    text-decoration: none;
+  }
+  .ka-open_menu {
+    color: white;
+  }
+  .ka-open_menu.background--light {
+    color: black;
+  }
+  .ka-open_menu.background--dark {
+    color: white;
+  }
+  .ka-close_menu {
+    color: black;
+  }
+  #menulogo {
+    font-size: 120px;
+    text-decoration: none;
+  }
+  .ka-isotipo_ka_zephyr {
+    color: white;
+  }
+  .ka-isotipo_ka_zephyr.background--light {
+    color: black;
+  }
+  .ka-isotipo_ka_zephyr.background--dark {
+    color: white;
   }
 }
 
@@ -1300,6 +1373,10 @@ span.psw {
     left: 15%;
     top: 70%;
   }
+  #object6 {
+    left: 90%;
+    top: 40%;
+  }
   .img1 {
     height: 350px;
     width: 350px;
@@ -1328,6 +1405,38 @@ span.psw {
     height: 300px;
     width: 300px;
   }
+  .btn-menu {
+    text-decoration: none;
+  }
+  #menuicon {
+    font-size: 100px;
+    text-decoration: none;
+  }
+  .ka-open_menu {
+    color: white;
+  }
+  .ka-open_menu.background--light {
+    color: black;
+  }
+  .ka-open_menu.background--dark {
+    color: white;
+  }
+  .ka-close_menu {
+    color: black;
+  }
+  #menulogo {
+    font-size: 120px;
+    text-decoration: none;
+  }
+  .ka-isotipo_ka_zephyr {
+    color: white;
+  }
+  .ka-isotipo_ka_zephyr.background--light {
+    color: black;
+  }
+  .ka-isotipo_ka_zephyr.background--dark {
+    color: white;
+  }
 }
 
 /* cursor */
@@ -1355,6 +1464,7 @@ span.psw {
 .moonlanding {
   font-size: 0;
   background-image: url(../images/bgblack.png);
+  background-size: cover;
 }
 
 .fade {
