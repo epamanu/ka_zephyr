@@ -271,12 +271,12 @@ body {
 #menuicon{
   font-size: 100px;
   text-decoration: none;
-  
+  color: black;
   
 }
 
 .ka-open_menu{
-   color: white;
+   color: black;
 }
 
 .ka-open_menu.background--light {
@@ -294,10 +294,11 @@ body {
 #menulogo{
    font-size: 120px;
    text-decoration: none;
+   color: black;
 }
 
 .ka-isotipo_ka_zephyr{
-   color: white;
+   color: black;
    
 }
 
@@ -342,11 +343,18 @@ body {
 
 
 .planets {
-   height: 800px;
+   height: 100vh;
    width: 100%;
    position: relative;
-   background-image: url(../images/bgwhite.png);
-   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center; 
+  // background-image: url(../images/bgwhite.png);
+  // background-size: cover;
+
+  background-color: #ebd2b8;
    
     
 
@@ -356,8 +364,9 @@ body {
 #main {
    height: 100%;
    width: 100%;
-   position: absolute;
-   overflow: hidden;  
+   
+   
+ 
   
     
 }
@@ -369,215 +378,303 @@ body {
 
 
 
-#object1 {
-   position: absolute;
-   top: 10%;
-   left: -2%;
 
+
+
+
+
+
+
+
+
+@mixin on-circle($item-count, $circle-size, $item-size) {  
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    margin: -($item-size / 2);
+    width:  $item-size;
+    height: $item-size;
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 8, $circle-size: 33em, $item-size: 6em); 
+ margin: 5em auto 0;
+
+ //@at-root position: absolute;
+ // height: 700px;
+ // width: 700px;
+
+ // background-color: #D6BFDD;
+
+ // border: solid 5px tomato;
+
+  img { 
+    display: block; 
+    max-width: 100%;
+    max-height: 100%; 
+  //  border-radius: 50%;
+ //   filter: grayscale(100%);
+  //  border: solid 5px tomato;
+  //  transition: .15s;
+  
+     
+  //  &:hover {
+  //    filter: grayscale(0);
+ //   }
+  }
+}
+
+
+
+
+
+
+
+
+.circle-container{
+   animation: circle0 500s linear infinite;
+}
+
+
+
+
+
+
+//.circle-container{
+
+
+
+// }
+
+
+
+#object1 {
+   height: 180px;
+   width: 180px;
+   
+   
    
 }
 
 #object2 {
-   position: absolute;
-   top: 40%;
-   left: 13%;
-   z-index: 2;
+   
+   height: 100px;
+   width: 100px;
 
    
 }
 
 #object3 {
-   position: absolute;
-   top: -5%;
-   left: 30%;
+   height: 180px;
+   width: 180px;
 
    
 }
 
 #object4 {
-   position: absolute;
-   left: 72%;
-   top: -15%;
+   height: 100px;
+   width: 100px;
 
    
 }
 
 #object5 {
-   position: absolute;
-   left: 15%;
-   top: 70%;
-   z-index: 2;
+   height: 180px;
+   width: 180px;
 
    
 }
 
 #object6 {
-   position: absolute;
-   left: 90%;
-   top: 40%;
-   z-index: 2;
+   height: 100px;
+   width: 100px;
 
    
 }
 
 #object7 {
-   position: absolute;
-   top: 70%;
-   left: 55%;
+   height: 180px;
+   width: 180px;
    
  
 }
 
 #object8 {
-   position: absolute;
-   top: 70%;
-   left: 55%;
+   height: 100px;
+   width: 100px;
    
  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .img1{
-   height: 350px;
-   width: 350px;
+   height: 180px;
+   width: 180px;
    animation: circle1 30s linear infinite;
 }
 
 .img2{
-   height: 180px;
-   width: 180px;
+   height: 100px;
+   width: 100px;
    animation: circle2 30s linear infinite;
 }
 
 .img3{
-   height: 210px;
-   width: 210px;
+   height: 100px;
+   width: 100px;
    animation: circle3 40s linear infinite;
 }
 
 .img4{
-   height: 270px;
-   width: 270px;
+   height: 180px;
+   width: 180px;
    animation: circle4 50s linear infinite;
 }
 
 .img5{
-   height: 100px;
-   width: 100px;
-   animation: circle5 70s linear infinite;
+   height: 180px;
+   width: 180px;
+  animation: circle5 70s linear infinite;
 }
 
 .img6{
-    height: 240px;
-    width: 240px;
+   height: 100px;
+   width: 100px;
     animation: circle6 30s linear infinite;
 }
 
 .img7{
-   height: 300px;
-   width: 300px;
+   height: 100px;
+   width: 100px;
    animation: circle7 50s linear infinite;
 }
+
+.img8{
+   height: 180px;
+   width: 180px;
+  animation: circle5 70s linear infinite;
+}
+
+
+
+
+
+@keyframes circle0{
+   from{
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
+   }
+}
+
+
+
+
+@keyframes circle0{
+   from{
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
+   }
+}
+
+
 
 
 @keyframes circle1{
    from{
       transform: rotate(0deg)
-                 translate(-30px)
+                 translate(1px)
                  rotate(0deg);
    }
    to{
       transform: rotate(360deg)
-                 translate(-30px)
+      translate(1px)
                  rotate(360deg);
    }
 }
- 
-
-@keyframes circle2{
-   from{
-      transform: rotate(360deg)
-                 translate(-30px)
-                 rotate(360deg);
-   }
-   to{
-      transform: rotate(0deg)
-                 translate(-30px)
-                 rotate(0deg);
-
-   }
-}     
-
-@keyframes circle3{
-   from{
-      transform: rotate(360deg)
-                 translate(-30px)
-                 rotate(360deg);
-   }
-   to{
-      transform: rotate(0deg)
-                 translate(-30px)
-                 rotate(0deg);
-
-   }
-}  
-
-@keyframes circle4{
-   from{
-      transform: rotate(360deg)
-                 translate(-60px)
-                 rotate(360deg);
-   }
-   to{
-      transform: rotate(0deg)
-                 translate(-60px)
-                 rotate(0deg);
-
-   }
-}  
-
-@keyframes circle5{
-   from{
-      transform: rotate(360deg)
-                 translate(-80px)
-                 rotate(360deg);
-   }
-   to{
-      transform: rotate(0deg)
-                 translate(-80px)
-                 rotate(0deg);
-
-   }
-}  
-
 
 @keyframes circle6{
    from{
-      transform: rotate(360deg)
-                 translate(-30px)
-                 rotate(360deg);
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
    }
    to{
-      transform: rotate(0deg)
-                 translate(-30px)
-                 rotate(0deg);
-
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
    }
-} 
+}
 
-
-@keyframes circle7{
+@keyframes circle3{
    from{
-      transform: rotate(360deg)
-                 translate(-50px)
-                 rotate(360deg);
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
    }
    to{
-      transform: rotate(0deg)
-                 translate(-50px)
-                 rotate(0deg);
-
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
    }
-} 
+}
+
+@keyframes circle4{
+   from{
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
+   }
+}
+
  
 
  #layer {
