@@ -48,6 +48,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
     
     
  
@@ -343,6 +344,7 @@ body {
 
 
 .planets {
+   position: relative;
    height: 100vh;
    width: 100%;
    position: relative;
@@ -418,7 +420,7 @@ body {
 }
 
 .circle-container {
-  @include on-circle($item-count: 8, $circle-size: 33em, $item-size: 6em); 
+  @include on-circle($item-count: 8, $circle-size: 40em, $item-size: 6em); 
  margin: 5em auto 0;
 
  //@at-root position: absolute;
@@ -453,7 +455,7 @@ body {
 
 
 .circle-container{
-   animation: circle0 500s linear infinite;
+   animation: circle0 100s linear infinite;
 }
 
 
@@ -486,8 +488,10 @@ body {
 }
 
 #object3 {
+   
    height: 180px;
    width: 180px;
+   z-index: 10;
 
    
 }
@@ -500,8 +504,10 @@ body {
 }
 
 #object5 {
+   
    height: 180px;
    width: 180px;
+   z-index: 10;
 
    
 }
@@ -514,8 +520,11 @@ body {
 }
 
 #object7 {
+   
    height: 180px;
    width: 180px;
+   z-index: 10;
+   position: relative;
    
  
 }
@@ -555,6 +564,7 @@ body {
    height: 100px;
    width: 100px;
    animation: circle3 40s linear infinite;
+   z-index: 10;
 }
 
 .img4{
@@ -567,6 +577,7 @@ body {
    height: 180px;
    width: 180px;
   animation: circle5 70s linear infinite;
+  z-index: 10;
 }
 
 .img6{
@@ -579,6 +590,7 @@ body {
    height: 100px;
    width: 100px;
    animation: circle7 50s linear infinite;
+   z-index: 10;
 }
 
 .img8{
@@ -636,19 +648,6 @@ body {
    }
 }
 
-@keyframes circle6{
-   from{
-      transform: rotate(0deg)
-                 translate(1px)
-                 rotate(0deg);
-   }
-   to{
-      transform: rotate(360deg)
-      translate(1px)
-                 rotate(360deg);
-   }
-}
-
 @keyframes circle3{
    from{
       transform: rotate(0deg)
@@ -675,6 +674,20 @@ body {
    }
 }
 
+@keyframes circle5{
+   from{
+      transform: rotate(0deg)
+                 translate(1px)
+                 rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg)
+      translate(1px)
+                 rotate(360deg);
+   }
+}
+
+ 
  
 
  #layer {
@@ -682,7 +695,7 @@ body {
    top: 0;
    left: 0;
    width: 100%;
-   height: 100vh;
+   height: 100%;
    
 
    
@@ -692,16 +705,75 @@ body {
 
  .text{
 
+   position: relative;
    width: 100%;
    height: 100%;
    display: grid;
+   text-align: center;
    place-items: center;
 
    justify-content: center;
-   padding: 2rem 0.5rem 0 0.5rem;
+   z-index: 2;
+
+
+  // padding: 2rem 0.5rem 0 0.5rem;
   }
 
 
+
+
+
+  .we{
+    position: absolute; 
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 142.4px;
+   color: #000;
+   transform: translateY(-70px);
+   padding: 0;
+   margin: 0;
+   
+   display: grid;
+   text-align: center;
+   place-items: center;
+
+   justify-content: center;
+   
+
+  }
+
+  .are{
+   position: absolute; 
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 45.64px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+   
+
+   display: grid;
+   place-items: center;
+   text-align: center;
+   justify-content: center;
+  }
+
+  .thiswords{
+   position: absolute; 
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+  // font-size: 216.59px;
+  font-size: 190px;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+   transform: translateY(120px);
+
+   display: grid;
+   place-items: center;
+   text-align: center;
+   justify-content: center;
+
+   z-index: 2;
+
+  }
 
 .copies{
    font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -714,6 +786,7 @@ body {
 
    justify-content: center;
    margin: auto;
+   z-index: 2;
 }
 
 .herostick {
