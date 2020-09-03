@@ -233,6 +233,7 @@ span.psw {
   -webkit-transition-delay: 3s;
           transition-delay: 3s;
   font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
 }
 
 .full-menu .wrap .menu-text {
@@ -415,6 +416,15 @@ span.psw {
 .circle-container {
   -webkit-animation: circle0 100s linear infinite;
           animation: circle0 100s linear infinite;
+  -webkit-transition: 5s;
+  transition: 5s;
+  opacity: 0;
+}
+
+.circle-container[data-scroll="in"] {
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
+  opacity: 1;
 }
 
 #object1 {
@@ -668,8 +678,6 @@ span.psw {
   font-family: 'Cormorant Garamond', serif;
   font-size: 142.4px;
   color: #000;
-  -webkit-transform: translateY(-70px);
-          transform: translateY(-70px);
   padding: 0;
   margin: 0;
   display: -ms-grid;
@@ -679,6 +687,17 @@ span.psw {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 5s;
+  transition: 5s;
+  opacity: 0;
+}
+
+.we[data-scroll="in"] {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  opacity: 1;
 }
 
 .are {
@@ -695,6 +714,13 @@ span.psw {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 5s;
+  transition: 5s;
+  opacity: 0;
+}
+
+.are[data-scroll="in"] {
+  opacity: 1;
 }
 
 .thiswords {
@@ -704,8 +730,6 @@ span.psw {
   color: #fff;
   margin: 0;
   padding: 0;
-  -webkit-transform: translateY(120px);
-          transform: translateY(120px);
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -714,6 +738,17 @@ span.psw {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 5s;
+  transition: 5s;
+  opacity: 0;
+}
+
+.thiswords[data-scroll="in"] {
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+  opacity: 1;
 }
 
 .copies {
